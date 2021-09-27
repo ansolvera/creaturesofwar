@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "en-us"
+languageName = "English"
+
+title = "Creatures of War"
+
+enableRobotsTXT = true
+canonifyURLs = true

@@ -1,0 +1,76 @@
+html {
+    background: $gray-900;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+}
+
+.main {
+    margin-top: -3.75rem;
+}
+
+a {
+
+    transition: color 300ms ease-in-out;
+
+    &:hover {
+        color: $red-400;
+    }
+
+}
+
+
+
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+.h-full {
+    height: 100%;
+}
+
+.content-between {
+    align-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.underline {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        margin: 0 auto;
+        width: 40%; height: 2px;
+        right: 0; bottom: -1rem; left: 0;
+        background: $red-400;
+    }
+
+}
+
+.underline-left {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        margin: 0;
+        width: 40%; height: 2px;
+        right: 0; bottom: -1rem; left: 0;
+        background: $red-400;
+    }
+
+}
+
+.is-hidden {
+    display: none;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head.html" . }}
+
+<body>
+    <div class="container with-sidebar">
+        {{ partial "sidebar.html" . }}
+
+        <main aria-roledescription="main">
+            {{ block "main" . }} {{ end }}
+        </main>
+    </div>
+
+</body>

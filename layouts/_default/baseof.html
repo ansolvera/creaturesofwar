@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head.html" . }}
+
+<body class="body">
+    {{ if eq .Params.type "list" }}
+        {{ partial "navigation-list.html" . }}
+    {{ else if eq .Params.layout "press" }}
+        {{ partial "navigation-press.html" . }}
+    {{ else }}
+        {{ partial "navigation.html" . }}
+    {{ end }}
+
+    <main aria-roledescription="main" class="main">
+        {{ block "main" . }} {{ end }}
+    </main>
+
+    {{ partial "scripts.html" . }}
+
+    
+    
+</body>

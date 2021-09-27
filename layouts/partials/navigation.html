@@ -1,0 +1,48 @@
+<header aria-roledescription="header" id="header">
+    <nav class="navigation">
+        <div class="container">
+            <div class="flex-row between">
+                <div class="navigation__left hidden-for-mobile">
+                    <div class="flex-row start">
+                        <p class="nav-text">Wishlist on Steam</p>
+                        <a href="https://epicgames.com/store/en-US/" target="_blank" rel="noopener noreferrer">
+                            <img src="/img/epic-games-logo.svg" alt="Epic Games logo" class="logo hidden">
+                        </a>
+                        <a href="https://humblebundle.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="/img/humble-bundle-logo.svg" alt="Humble Bundle logo" class="logo hidden">
+                        </a>
+                        <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="/img/steam-logo.svg" alt="Steam logo" class="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="navigation__brand">
+                    <a href="/">
+                        <img src="/img/logo.webp" alt="Creatures of War logo" class="nav-logo">
+                    </a>
+                </div>
+                <div class="navigation__right hidden-for-mobile">
+                    <a href="#fop-anchor" class="nav-text">Join The Field Operative Program</a>
+                </div>
+                <div class="navigation__mobile hidden-for-desktop" x-data="{ open: false }">
+                    <button @click="open = !open" class="flex-col center">
+                        <img src="/img/hamburger.svg" alt="Mobile menu icon" class="hamburger" x-show="close">
+                    </button>
+                    <div class="navigation__overlay" x-show="open" @click.away="open = false">
+                        <button @click="open = !open" class="flex-col center">
+                            <img src="/img/x.svg" alt="Mobile menu close icon" class="close" x-show="open">
+                        </button>
+                        <div class="navigation__menu"> 
+                            <a href="#features" class="text-4xl">Dive Into the Unknown</a>
+                            <a href="#values" class="text-4xl">Core Values</a>
+                            <a href="#ludwig" class="text-4xl">Mike Ludwig</a>
+                            <a href="#tabs" class="text-4xl">Bio-Organic Weapons</a>
+                            <a href="#fop" class="text-4xl">Field Operative Program</a>
+                            <a href="#info" class="text-4xl">Wishlist on Steam</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
