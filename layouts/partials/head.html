@@ -32,6 +32,11 @@
         gtag('config', 'G-PQLJW53C5H');
     </script>
 
+    <!-- Netlify CMS -->
+    {{ if .IsHome }}
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {{ end }}
+
 </head>
 <body>
     
