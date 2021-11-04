@@ -570,8 +570,7 @@
     <div class="container">
       <h2 class="text-5xl text-center mb-40">Devlog</h2>
       <div class="devlog__featured__wrapper mb-80">
-        {{ range first 1 ( where ( where .Site.RegularPages "Type" "in"
-        site.Params.mainSections) ".Params.featured" "=" true) }}
+        {{ range first 1 ( where ( where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" true) }}
         <a
           href="/devlog/#{{ .Params.slug }}"
           class="devlog__featured flex-row between"
@@ -586,8 +585,7 @@
         </a>
         {{ end }}
         <div class="devlog__recent">
-          {{ range first 4 ( where ( where .Site.RegularPages "Type" "in"
-          site.Params.mainSections) ".Params.featured" "=" false).Reverse }}
+          {{ range first 4 ( where ( where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" "=" false).Reverse }}
           <a href="/devlog/#{{ .Params.slug }}" class="devlog__recent__post">
             {{ with .Params.image }}
             <img src="" alt="" />
